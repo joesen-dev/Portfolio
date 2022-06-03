@@ -1,0 +1,55 @@
+:root {
+    --Primary-color: #12AFD6;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* STYLE BODY */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    padding: 20px 35px;
+    color: var(--Primary-color);
+    background-color: rgba(0, 0, 0, 0.76);
+    background-image: url("../images/keyboard.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+}
+header a {
+    text-decoration: none;
+    color: var(--Primary-color)
+}
+Header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+}
+header nav ul li a {
+    padding: 10px 15px;
+}
+a:link {
+    text-decoration: none;
+}
+.hero {
+    padding: 40px 70px;
+    background-image: url("../images/keyboard.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hero h2 {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--Primary-color);
+}
