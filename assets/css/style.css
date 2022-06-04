@@ -107,7 +107,6 @@ body {
     display: inline-block;
     max-width: 100%;
     height: auto;
-    margin: 0;
 }
 .bio {
     display: flex;
@@ -118,20 +117,23 @@ body {
 }
 .work-row {
     position: relative;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: flex;
     padding: 15px;
     flex: 1;
 }
 .work-row-textbox {
-    background-color: var(--Primary-color);
-    color: #000000;    
+    background-color: rgba(18, 175, 214, 1);
+    color:  rgba(0, 0, 0, 0.5);
     padding: 10px 25px;
     font-size: 40px;
     top: 75%;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
+    top: 75%;
+    transform: translate(20px,10px);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -140,17 +142,18 @@ body {
 .work-row img {
     opacity: 1;
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     transition: 0.5s ease;
-    border-radius: 10px;
+    backface-visibility: hidden;
 }
-.work-row:hover .work-row img {
+.work-row:hover .run {
     opacity: 0.3;
 }
 .work-row:hover .work-row-textbox {
     opacity: 1;
 }
+
 /*STYLE FOOTER start */ 
 footer {
     padding: 20px 35px;
