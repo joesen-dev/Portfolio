@@ -10,47 +10,22 @@
 a:link {
     text-decoration: none;
 }
+/* STYLE HERO start */
+.hero {
+    padding: 40px 70px;
+    background-image: url("../images/keyboard.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hero h2 {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--Primary-color);
+}
+/* STYLE HERO end */ 
 /* STYLE BODY start */
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.primary-border {
-    border-color: var(--Secondary-color);
-    margin: auto;
-}
-.work {
-    display: flex;
-    justify-content: space-around;
-}
-.main{
-    background-size: cover;
-    display: flex;
-    padding: 60px;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-.main-body {
-    background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-}
-.section-title {
-    font-size: 30px;
-    color: var(--Primary-color);
-    border-right: 4px solid;
-    padding-right: 10px;
-    margin: 0 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-.flex-row {
-    display: flex;
-    padding: 15px;
 }
 /* STYLE BODY end */
 /* STYLE HEADER start */ 
@@ -87,29 +62,75 @@ header nav ul li a {
     padding: 10px 15px;
 }
 /* STYLE HEADER end */ 
-/* STYLE HERO start */
-.hero {
-    padding: 40px 70px;
-    background-image: url("../images/keyboard.jpg");
-    background-size: cover;
-    background-position: center;
+.primary-border {
+    border-color: var(--Secondary-color);
+    margin: auto;
 }
-.hero h2 {
+.work {
     display: flex;
-    justify-content: flex-end;
-    color: var(--Primary-color);
+    justify-content: space-around;
 }
-/* STYLE HERO end */ 
+.main{
+    background-size: cover;
+    display: flex;
+    padding: 60px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.main-body {
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 15px;
+}
+.section-title {
+    font-size: 30px;
+    color: var(--Primary-color);
+    border-right: 4px solid;
+    padding-right: 10px;
+    margin: 0 0 auto;
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.bio {
+    display: flex;
+    padding: 15px;
+    flex: 1;
+    width: 50%;
+}
+.work-row {
+    position: relative;
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    flex: 1;
+}
+.work-row img {
+    width: 50%;
+    padding: 25px;
+    border-radius: 10px;
+}
+.run-buddy-text {
+    background-color: var(--Primary-color);
+    color: #000000;
+    font-size: 25px;
+}
 /*STYLE FOOTER start */ 
 footer {
     padding: 20px 35px;
     color: var(--Primary-color);
-    background-color: #000000;
-    background-image: url("../images/keyboard.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     display: flex;
+    padding: 60px;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+footer address {
+    display: flex;
+    justify-content: space-around;
 }
