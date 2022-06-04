@@ -1,9 +1,9 @@
 :root {
     --Primary-color: #12AFD6;
-
+    --Secondary-color: #000000;
 }
 * {
-    margin: 0;
+
     padding: 0;
     box-sizing: border-box;
 }
@@ -14,12 +14,50 @@ a:link {
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.primary-border {
+    border-color: var(--Secondary-color);
+    margin: auto;
+}
+.work {
+    display: flex;
+    justify-content: space-around;
+}
+.main{
+    background-size: cover;
+    display: flex;
+    padding: 60px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.main-body {
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.section-title {
+    font-size: 30px;
+    color: var(--Primary-color);
+    border-right: 4px solid;
+    padding-right: 10px;
+    margin: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    padding: 15px;
+}
 /* STYLE BODY end */
 /* STYLE HEADER start */ 
 header {
     padding: 20px 35px;
     color: var(--Primary-color);
-    background-color: #000000;
+    background-color: var(--Secondary-color);
     background-image: url("../images/keyboard.jpg");
     background-size: cover;
     background-position: center;
@@ -30,11 +68,15 @@ header {
     position: -webkit-sticky;
     position: sticky;
 }
+header h1 {
+    font-size: 45px;
+}
 header a {
     text-decoration: none;
     color: var(--Primary-color)
 }
 Header nav ul {
+    font-size: 35px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
