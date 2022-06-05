@@ -4,6 +4,7 @@
 }
 * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 a:link {
@@ -47,9 +48,11 @@ header nav ul li a {
     background-image: url("../images/keyboard.jpg");
     background-size: cover;
     background-position: center;
+    justify-content: flex-end;
+    display: flex;
     align-items: flex-start;
 }
-.hero h2 {
+.hero-cta {
     display: flex;
     justify-content: flex-end;
     color: var(--Primary-color);
@@ -65,27 +68,30 @@ body {
     border-color: var(--Secondary-color);
     margin: auto;
 }
-.work {
-    display: flex;
-    justify-content: space-around;
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
 }
-.main{
-    background-size: cover;
-    display: flex;
-    padding: 60px;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: column;
+.main-sub {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 .main-body {
+    position: relative; 
     background-size: cover;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding: 15px;
 }
-.bio, .contact-info {
+
+.bio, .contact-info. .work-row {
     display: flex;
     padding: 15px;
     flex: 1;
@@ -104,7 +110,7 @@ body {
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 .section-title {  
     display: inline-block;
@@ -113,19 +119,26 @@ body {
     height: auto;
     margin: 0;
 }
-.flex-row img {
+.avatar {
     display: inline-block;
     max-width: 100%;
     height: auto;
 }
-
-.work-row {
-    position: relative;
+.work {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+.image img {
+    position: absolute;
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
     display: flex;
     padding: 15px;
     flex: 1;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
 }
 .work-row-textbox {
     background-color: rgba(18, 175, 214, 1);
@@ -143,14 +156,6 @@ body {
     flex-wrap: nowrap;
     align-items: flex-end;
 }
-.work-row img {
-    opacity: 1;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
-}
 .work-row:hover .run {
     opacity: 0.3;
 }
@@ -166,7 +171,9 @@ footer {
     padding: 60px;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+    height: 100%;
+    width: 100%;
+ }
 footer address {
     display: flex;
     justify-content: space-around;
@@ -191,24 +198,59 @@ footer address {
     .section-title {
         width:  80%;
     }
-    .run {
-        flex: 0 70%
+    .main-body {
+        flex: 0 70%;
+        width: 80%;
     }
     footer h2, footer div {
         text-align: center;
         width: 100%;
     }
+    .hero-cta {
+        width: 100%;
+        text-align: center;
+    }
     .flex-row, .bio, .work-row {
         width: 100%;
-    }
-    .flex-row {
+        flex: 1 100%;
         text-align: center;
     }
     .contact {
         flex: 1 100%;
     }    
+    .run {
+        max-width: 100%;
+        max-height: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    .flex-row h2 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .work-row {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    image img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .work-row-textbox {
+        flex: 100%
+    }
 }
 @media screen and (max-width:575px) {
+    .work-row-textbox {
+        width: 100%;
+    }
     .section-title {
         width: 95%;
     }
@@ -219,6 +261,9 @@ footer address {
         flex: 0 100%;
     }
     .contact {
+        text-align: center;
+    }
+    .contact-info {
         text-align: center;
     }
     .contact-info > * {

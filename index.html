@@ -36,37 +36,47 @@
 
     <!-- HERO -->
     <section class="hero">
-        <h2>Welcome to my Portfolio page!</h2>
+        <h2 class="hero-cta">Welcome to my Portfolio page!</h2>
     </section>
     <main class="main">
         <!-- BIO -->
-        <section  id="about-me" class="main-body">
-            <div class="flex-row">
-                <img src="./assets/images/avatar_transparent.png" alt="Joseph's Avatar">
-                <h2 class="section-title primary-border">About Me</h2>
-            </div>
-            <p class="bio">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Totam aliquid optio commodi incidunt nesciunt harum aspernatur 
-                voluptatem veniam ipsum accusantium obcaecati debitis vel, 
-                cupiditate numquam labore illum doloremque natus praesentium?
-            </p>
-        </section>
-        <!-- WORK -->
-        <section  id="work" class="main-body">
-            <div class="flex-row">
-                <h2 class="section-title primary-border">Work</h2>
-            </div>
-            <div class="work-row">
-                <div class="work-row-textbox">
-                    <h3>Run Buddy</h3>
-                </div>
-                <a href="https://joesen-dev.github.io/run-buddy/" 
-                alt="Links to the Run Buddy landing page">
-                <img src="./assets/images/run-buddy-page.png" 
-                alt="The Run Buddy Landing page" class="run">                
-            </div>
-        </section>
+        <div class="main-sub">
+            <section  id="about-me">
+                <section class="main-body">
+                    <div class="flex-row primary-border">
+                        <img src="./assets/images/avatar_transparent.png" 
+                        alt="Joseph's Avatar" 
+                        class="avatar">
+                        <h2 class="section-title">About Me</h2>
+                    </div>
+                    <p class="bio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam aliquid optio commodi incidunt nesciunt harum aspernatur 
+                        voluptatem veniam ipsum accusantium obcaecati debitis vel, 
+                        cupiditate numquam labore illum doloremque natus praesentium?
+                    </p>
+                </section>
+            </section>
+            <!-- WORK -->
+            <section id="work">
+                <section class="main-body">
+                    <div class="flex-row primary-border">
+                        <h2 class="section-title">Work</h2>
+                    </div>
+                    <div class="work-row">
+                        <div class="work-row-textbox">
+                            <h3>Run Buddy</h3>
+                        </div>
+                        <div class="image">   
+                            <a href="https://joesen-dev.github.io/run-buddy/" 
+                            alt="Links to the Run Buddy landing page">
+                            <img src="./assets/images/run-buddy-page.png" 
+                            alt="The Run Buddy Landing page" class="run">
+                        </div>                   
+                    </div>
+                </section> 
+            </section>
+        </div>
     </main>
     <!-- CONTACT ME -->
     <footer  id="contact-me" class="contact">
