@@ -47,11 +47,13 @@ header nav ul li a {
     background-image: url("../images/keyboard.jpg");
     background-size: cover;
     background-position: center;
+    align-items: flex-start;
 }
 .hero h2 {
     display: flex;
     justify-content: flex-end;
     color: var(--Primary-color);
+    line-height: 1.2;
 }
 /* STYLE HERO end */ 
 /* STYLE BODY start */
@@ -83,8 +85,15 @@ body {
     align-items: flex-start;
     padding: 15px;
 }
-.section-title {
-    font-size: 30px;
+.bio, .contact-info {
+    display: flex;
+    padding: 15px;
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+.flex-row {
+    font-size: 48px;
     color: var(--Primary-color);
     border-right: 4px solid;
     padding-right: 10px;
@@ -95,26 +104,21 @@ body {
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: column;
+    align-items: flex-start;
 }
-.section-title h2 {  
+.section-title {  
     display: inline-block;
     text-align: right;
     max-width: 100%;
     height: auto;
     margin: 0;
 }
-.section-title img {
+.flex-row img {
     display: inline-block;
     max-width: 100%;
     height: auto;
 }
-.bio {
-    display: flex;
-    padding: 15px;
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-}
+
 .work-row {
     position: relative;
     max-width: 100%;
@@ -166,4 +170,58 @@ footer {
 footer address {
     display: flex;
     justify-content: space-around;
+}
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .section-title {
+        width:  80%;
+    }
+    .run {
+        flex: 0 70%
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .flex-row, .bio, .work-row {
+        width: 100%;
+    }
+    .flex-row {
+        text-align: center;
+    }
+    .contact {
+        flex: 1 100%;
+    }    
+}
+@media screen and (max-width:575px) {
+    .section-title {
+        width: 95%;
+    }
+    .bio {
+        width: 100%;
+    }
+    .main-body {
+        flex: 0 100%;
+    }
+    .contact {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;       
+    }
 }
