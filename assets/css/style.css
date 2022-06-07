@@ -13,15 +13,20 @@ a:link {
 /* STYLE HEADER start */ 
 header {
     padding: 20px 35px;
+    background-image: url("../images/keyboard.jpg");
+    image-rendering: -pixelated;;
     color: var(--Primary-color);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 header h1 {
     font-size: 45px;
@@ -46,8 +51,11 @@ header nav ul li a {
 .hero {
     padding: 40px 70px;
     background-image: url("../images/keyboard.jpg");
+    image-rendering: pixelated;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     justify-content: flex-end;
     display: flex;
     align-items: flex-start;
@@ -62,6 +70,7 @@ header nav ul li a {
 /* STYLE BODY start */
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 /* STYLE BODY end */
 .primary-border {
@@ -72,14 +81,10 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-
 }
 .main-sub {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    margin: 5px 3.5%;
 }
 .main-body {
     position: relative; 
@@ -90,7 +95,14 @@ body {
     align-items: flex-start;
     padding: 15px;
 }
+.bio {
+    width: 35%;
+    text-align: left;
 
+    color: var(--Secondary-color);
+    font-size: 18px;
+    line-height: 1.2;
+}
 .bio, .work-row {
     display: flex;
     position: relative;
@@ -98,8 +110,6 @@ body {
     justify-content: flex-start;
     padding: 15px;
     flex: 1;
-    max-width: 100%;
-    height: auto;
 }
 .contact-info {
     display: flex;
@@ -108,8 +118,6 @@ body {
     justify-content: space-around;
     padding: 15px;
     flex: 1;
-    max-width: 100%;
-    height: auto;
 }
 .flex-row {
     font-size: 48px;
