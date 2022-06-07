@@ -29,7 +29,10 @@ header {
     z-index: 9999;
 }
 header h1 {
-    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 75px;
+        text-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 header a {
     text-decoration: none;
@@ -45,6 +48,9 @@ Header nav ul {
 }
 header nav ul li a {
     padding: 10px 15px;
+    font-weight: lighter;
+    font-weight: lighter;
+    text-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 /* STYLE HEADER end */ 
 /* STYLE HERO start */
@@ -76,6 +82,7 @@ body {
 .primary-border {
     border-color: var(--Secondary-color);
     margin: auto;
+    max-height: 100%;
 }
 .main {
     position: relative;
@@ -98,20 +105,20 @@ body {
 .bio {
     width: 35%;
     text-align: left;
-
     color: var(--Secondary-color);
-    font-size: 18px;
-    line-height: 1.2;
+    font-size: 25px;
+    line-height: 2;
 }
 .bio, .work-row {
     display: flex;
     position: relative;
     display: flex;
     justify-content: flex-start;
-    padding: 15px;
+    padding: 15px 15px 15px 25px;
     flex: 1;
 }
 .contact-info {
+    font-size: 18px;
     display: flex;
     position: relative;
     display: flex;
