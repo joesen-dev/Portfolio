@@ -91,11 +91,21 @@ body {
     padding: 15px;
 }
 
-.bio, .contact-info, .work-row {
+.bio, .work-row {
     display: flex;
     position: relative;
     display: flex;
     justify-content: flex-start;
+    padding: 15px;
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+.contact-info {
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
     padding: 15px;
     flex: 1;
     max-width: 100%;
@@ -163,22 +173,10 @@ body {
 .work-row:hover .work-row-textbox {
     opacity: 1;
 }
-
-/*STYLE FOOTER start */ 
 footer {
-    padding: 20px 35px;
     color: var(--Primary-color);
-    display: flex;
-    padding: 60px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
- }
-footer address {
-    display: flex;
-    justify-content: space-around;
 }
+/*STYLE FOOTER start */ 
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
