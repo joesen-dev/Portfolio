@@ -29,9 +29,11 @@ img {
   /* border: 10px solid #25181a; */
 }
 
-.card-panel {
+.card-panel,
+.card-content {
   background-color: var(--cafe-noir);
 }
+
 span#section-header {
   background-color: #25181a;
 }
